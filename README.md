@@ -24,7 +24,10 @@ data = {
 }
 
 df = pd.DataFrame(data)
-df.to_csv("students.csv", index=False)
+df.to_csv("students.csv", index=False)<img width="1117" height="791" alt="Screenshot 2026-03-30 105343" src="https://github.com/user-attachments/assets/59a6acda-c2a8-4a5f-b7f7-298827a22e30" />
+<img width="1119" height="786" alt="Screenshot 2026-03-30 105422" src="https://github.com/user-attachments/assets/e8dfab48-6fc6-407f-83b3-2534c79c26dc" />
+<img width="1120" height="783" alt="Screenshot 2026-03-30 105455" src="https://github.com/user-attachments/assets/363d826e-4f05-4ecb-873c-a90006a1a520" />
+
 ```
 
 * Dataset contains **5 rows and 4 columns**
@@ -116,3 +119,6 @@ Therefore we learn
 using python
 Pandas provides powerful and efficient tools for handling structured data in Python.
 
+<img width="1120" height="783" alt="Screenshot 2026-03-30 105455" src="https://github.com/user-attachments/assets/18fe136b-f57e-4bb0-b91b-6ecb681eb4cd" />
+<img width="1119" height="786" alt="Screenshot 2026-03-30 105422" src="https://github.com/user-attachments/assets/83549fcb-2867-4019-a3c3-33249fa03091" />
+<img width="1117" height="791" alt="Screenshot 2026-03-30 105343" src="https://github.com/user-attachments/assets/0583198c-d804-4594-bffd-3f7d5a451c7c" />
