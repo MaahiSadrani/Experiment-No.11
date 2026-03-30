@@ -118,6 +118,7 @@ Therefore we learn
 * Identifying missing values and dataset structure
 using python
 Pandas provides powerful and efficient tools for handling structured data in Python.
+## Refrence Images:
 
 <img width="1120" height="783" alt="Screenshot 2026-03-30 105455" src="https://github.com/user-attachments/assets/18fe136b-f57e-4bb0-b91b-6ecb681eb4cd" />
 <img width="1119" height="786" alt="Screenshot 2026-03-30 105422" src="https://github.com/user-attachments/assets/83549fcb-2867-4019-a3c3-33249fa03091" />
