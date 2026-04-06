@@ -4,111 +4,49 @@
 To create a dataset using Python and Pandas, save it as a CSV file, and perform basic data analysis operations. Also, to load an existing dataset and explore its structure and contents.
 ## Theory:
 # Dataset Creation
+Dataset- A dataset is a collection of data organized in a structured format such as rows and columns.
+In pandas, datasets are represented using a dataframe, which is a 2-dimensional tabular data structure (like an Excel sheet).
+Creating Dataset- Creating a dataset means manually defining data inside python and converting it into a dataframe.
 A dataset of student details was created using a Python dictionary and converted into a Pandas DataFrame.
-Dataset Attributes
-* Roll_No
-* Gender
-* Department
-* CGPA
-
-### Code
-
-```python
-import pandas as pd
-
-data = {
-    "Roll_No":[101,102,103,104,105],
-    "Gender":["Female","Male","Female","Male","Female"],
-    "Department":["Computer","IT","ENTC","Mechanical","Computer"],
-    "CGPA":[8.2,7.5,9.1,6.8,8.7]
-}
-
-df = pd.DataFrame(data)
-df.to_csv("students.csv", index=False)<img width="1117" height="791" alt="Screenshot 2026-03-30 105343" src="https://github.com/user-attachments/assets/59a6acda-c2a8-4a5f-b7f7-298827a22e30" />
-<img width="1119" height="786" alt="Screenshot 2026-03-30 105422" src="https://github.com/user-attachments/assets/e8dfab48-6fc6-407f-83b3-2534c79c26dc" />
-<img width="1120" height="783" alt="Screenshot 2026-03-30 105455" src="https://github.com/user-attachments/assets/363d826e-4f05-4ecb-873c-a90006a1a520" />
-
-```
-
-* Dataset contains **5 rows and 4 columns**
-* No missing values
-* Data types:
-
-  * Integer (Roll_No)
-  * Float (CGPA)
-  * Object (Gender, Department)
-
----
-
-## Dataset Exploration
- Basic Operations Performed
-
-* `df.size` → Total elements = 20
-* `df.shape` → (5, 4)
-* `df.info()` → Structure and data types
-* `df.describe()` → Statistical summary
-
----
-
-##  Loading Existing Dataset
-
-An existing dataset (`Cars93.csv`) was loaded and analyzed.
-
-### Code
-
-```python
+Dataset Attributes:
+Roll_No
+Gender
+Department
+CGPA
+Loading a Dataset- Loading a dataset means importing data from external sources into pandas.
+Loading Existing Dataset: An existing dataset (Cars93.csv) was loaded and analyzed.
 import pandas as pd
 import numpy as np
-
 df = pd.read_csv('/content/Cars93.csv')
-```
-## Dataset Details
-Columns
-* Manufacturer
-* Model
-* Type
-* Price
-* MPG.city
-* AirBags
-* Horsepower
-* Passengers
-* Rear.seat.room
-* Luggage.room
+import pandas- This line imports the pandas library.Pandas is used for data handling and analysis.
+Then a dataset is created through dictionary,list etc.
+df = pd.DataFrame(data)-Converts the dictionary into a dataframe and df is now a table.
+df.to_csv("students.csv", index=False)-Saves the dataframe into a file named students.csv.
+df.shape- It returns the dimensions of the dataframe in the form of (rows,columns).
+df.size- It returns the total number of elements (values) in the DataFrame.(size=rows*columns).
+df.info() is a function used to get a summary of a dataframe.It gives quick information about the structure of the dataset.It gives number of entries (rows), column names, non-null values, data types and memory usage.
+df.describe() is used to generate statistical summary of a dataframe.It mainly works on numerical columns.
+count- It gives number of non-null values.
+mean- It gives average value.
+std-It gives standard deviation (spread of data).
+min-It gives minimum value.
+25%-It gives first quartile.
+0%-It gives median.
+75%-It gives third quartile.
+max-It gives maximum value.
+import numpy as np-It imports NumPy library which is used for numerical operations (arrays, math functions).
+df = pd.read_csv('/Cars93.csv')- read_csv() is used to load a dataset from a CSV file and '/Cars93.csv' is the file path.
+df.head-It is used to display the first few rows of a dataframe.By default, it shows first 5 rows.
+df.tail-It is used to display the last few rows of a dataframe.By default, it shows last 5 rows.
+df.sample(5) is used to select random rows from a dataframe.It returns 5 random rows from the dataset.
+df.columns is used to get the names of all columns in a dataframe.
+df.isnull().sum()-It is used to check missing (null) values in each column of a datarfame.
+df.duplicated().sum()-It is used to find the number of duplicate rows in a dataframe.
+df.nunique() is used to count the number of unique (distinct) values in each column of a dataframe.
+Conclusion:
+This experiment demonstrated how to create a dataset in Python using Pandas, save it as a CSV file, and load external datasets for analysis.
+It also helped in understanding basic DataF
 
-### Shape & Size
-
-* Rows: 93
-* Columns: 10
-* Total elements: 930
-
----
-
-## Data Analysis Operations
-
-### Functions Used
-
-* `df.head()` → First 5 rows
-* `df.tail()` → Last 5 rows
-* `df.sample(10)` → Random sample
-* `df.columns` → Column names
-* `df.nunique()` → Unique values
-
----
-
-## Data Cleaning:
- Missing Values
-* AirBags: 34 missing
-* Rear.seat.room: 2 missing
-* Luggage.room: 11 missing
-
- Duplicate Records
-* No duplicate rows found
-
-## Statistical Summary
-* Average Price: 19.50
-* Average MPG.city: 22.36
-* Average Horsepower: 143.82
-* Passenger capacity ranges from 2 to 8
 
 ## Conclusion:
 Therefore we learn
